@@ -1,0 +1,20 @@
+// Поиск третьего числа
+Console.WriteLine("Введите трехзначное число: ");
+int num = int.Parse(Console.ReadLine());
+
+if (num > 100)
+{
+    int third = num % 10;
+    Console.Write("Третье число это - ");
+    Console.WriteLine(third);
+}
+if (num == 100)
+{
+    int third = num % 10;
+    Console.Write("Третье число это - ");
+    Console.WriteLine(third);
+}
+if (num < 100)
+{
+    Console.WriteLine("Вы ввели некорректное число!");
+}
