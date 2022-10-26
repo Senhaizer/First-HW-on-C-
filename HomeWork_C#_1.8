@@ -1,0 +1,15 @@
+// Удаление второй цифры трехзначного числа
+Console.WriteLine("Введите трехзначное число: ");
+int num = int.Parse(Console.ReadLine());
+
+double first = num * 0.01;
+int firstNum = (int)first;
+
+double second = num % 100;
+second = second * 0.1;
+int secondNum = (int)second;
+
+int thirdNum = num % 10;
+
+Console.Write(firstNum);
+Console.WriteLine(thirdNum);
