@@ -1,0 +1,12 @@
+// Вывод второй цифры трехзначного числа
+
+Console.WriteLine("Введите трехзначное число: ");
+int num = int.Parse(Console.ReadLine());
+double second = 0;
+
+second = num % 100;
+second = second * 0.1;
+int secondNum = (int)second;
+
+Console.Write("Второе число это - ");
+Console.WriteLine(secondNum);
