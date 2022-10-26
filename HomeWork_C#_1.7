@@ -1,0 +1,28 @@
+// Поиск наибольшего числа из отрезка от 10 до 99
+int number = new Random().Next(10, 99);
+Console.Write("Случайное число это - ");
+Console.WriteLine(number);
+
+double first = number * 0.1;
+int firstNum = (int)first;
+Console.Write("Первое число это - ");
+Console.WriteLine(firstNum);
+
+int secondNum = number % 10;
+Console.Write("Второе число это - ");
+Console.WriteLine(secondNum);
+
+if(firstNum > secondNum)
+{
+    Console.Write("Наибольшее число первое - ");
+    Console.WriteLine(firstNum);
+}
+if(firstNum < secondNum)
+{
+    Console.Write("Наибольшее число второе - ");
+    Console.WriteLine(secondNum);
+}
+if(firstNum == secondNum)
+{
+    Console.Write("Числа равны!");
+}
