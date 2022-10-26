@@ -1,0 +1,15 @@
+// Проверка на кратность чисел
+Console.WriteLine("Введите число А: ");
+int numA = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите число В: ");
+int numB = int.Parse(Console.ReadLine());
+if (numA % numB == 0)
+{
+    Console.WriteLine("Число A кратно числу В");
+}
+else
+{
+    int numC = numA % numB;
+    Console.Write("Число A не кратно числу В. Остаток - ");
+    Console.WriteLine(numC);
+}
