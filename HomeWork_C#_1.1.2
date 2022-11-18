@@ -1,0 +1,21 @@
+// Какое из двух чисел больше
+
+Console.WriteLine("Введите число А: ");
+int numA = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите число В: ");
+int numB = int.Parse(Console.ReadLine());
+int max = 0;
+if (numA > numB)
+{
+    max = numA;
+    Console.WriteLine($"Число A - {max}, больше");
+}
+else if (numA < numB)
+{
+    max = numB;
+    Console.WriteLine($"Число B - {max}, больше");
+}
+else
+{
+    Console.WriteLine("Числ А и В равны");
+}
