@@ -1,0 +1,35 @@
+// Какое из трех чисел больше
+
+Console.WriteLine("Введите число А: ");
+int numA = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите число В: ");
+int numB = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите число С: ");
+int numC = int.Parse(Console.ReadLine());
+int max = 0;
+if (numA > numB)
+{
+    if (numA > numC)
+    {
+        max = numA;
+        Console.WriteLine($"Число A - {max}, больше");
+    }
+    else 
+    {
+        max = numC;
+        Console.WriteLine($"Число C - {max}, больше");
+    }
+}
+else if (numA < numB)
+{
+    if (numB > numC)
+    {
+        max = numB;
+        Console.WriteLine($"Число B - {max}, больше");
+    }
+    else 
+    {
+        max = numC;
+        Console.WriteLine($"Число C - {max}, больше");
+    }
+}
